@@ -1,0 +1,24 @@
+name: EnergyDrinks
+main: me.marcoboekholt.ed.Main
+version: 1.0
+author: Marco Boekholt
+
+commands:
+  energydrinks:
+     description: Energy drinks command
+  ed:
+     description: Energy drinks command
+
+permissions:
+   energydrinks.*:
+     description: Gives access to all Godlike commands
+     default: op
+     children:
+       Godlike.help: true
+       Godlike.sword: true
+       Godlike.tools: true
+       Godlike.bow: true
+       Godlike.armor: true
+       Godlike.fishing: true
+   Godlike.help:
+     description: Allows you to use the help command
